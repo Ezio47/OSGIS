@@ -1,0 +1,70 @@
+Install instructions
+__________________________________________________________________________________________________________________________________
+
+Software requirements
+	
+	**** created under linux ubuntu v.10.1, 32-bit, virtual machine "osgeo-live" ****
+		
+	- Postgres SQL
+	- PGadmin 3
+	- Geoserver 2.5
+	- OpenLayers library 2.13.1 or higher
+	- apache 2.2 (or other webserver)
+	
+	!!! all required software is part of the "osgeo-live"-virtual machine disk image !!!
+	see -> http://live.osgeo.org/de/download.html 
+
+__________________________________________________________________________________________________________________________________
+
+Database setup
+
+
+	- Download database source files (use files in "DB_Backup" or own Openstreet shapefiles)
+	- Attributes should be:		
+					gid
+					osm_id
+					name
+					type
+					classify
+					link
+					geom
+	
+	- import data to postgres DB (pgAdmin recommended) via DB_Backup files or shapefiles via "shp2pgsql-gui" in console
+	- create seperate postgres DB for data capturing with empty layer
+
+__________________________________________________________________________________________________________________________________
+
+Geoserver setup
+
+
+
+	- create 2 workspaces in geoserver 
+		one for Data Capture
+		one for Map data
+	- establish connection between geoserver and DB
+	- setting layer styles (OSGIS/geoserver_styles/)
+	- publish map layers as WMS
+	- publish data capture layer as WFS-T
+	
+	
+__________________________________________________________________________________________________________________________________
+	
+Server environment setup
+
+	- copy webpages (OSGIS/) to localhosts internet directory
+	- copy proxy.cgi (OSGIS/proxy) to 'usr/lib/cgi-bin/' to solve CORS problem with WFS-T
+	- copy *.ftl files (OSGIS/templates) to geoserver template data directory (/usr/local/lib/geoserver-2.5/data_dir/workspaces/'name of map workspace')
+
+
+__________________________________________________________________________________________________________________________________
+
+OpenLayers setup
+	
+	- it is recommended to have the OpenLayeres.js locally (v.2.13.1)
+	
+__________________________________________________________________________________________________________________________________
+
+Additional information
+
+	project needs to have internet acces to show basemap
+
