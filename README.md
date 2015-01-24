@@ -6,10 +6,10 @@ SMART GIS SOLUTIONS
 
 ![alt tag](https://github.com/hska/OSGIS/blob/master/Pictures/SGS.png)
 
-Lecute project "OpenSource GIS"
+Lecute project "OpenSource GIS" -
 Lecturer: Marco Lechner
 
-Members of Smarg GIS Solution group:
+Members of Smart GIS Solution group:
 Fabian Weissert, 
 Alexander Tolle
 
