@@ -1,6 +1,11 @@
 Opensource GIS Project
 ===========
 
+SMART GIS SOLUTIONS
+-------------------
+
+![alt tag](https://github.com/hska/OSGIS/blob/master/Pictures/SGS.png)
+
 Lecute project "OpenSource GIS"
 Lecturer: Marco Lechner
 
