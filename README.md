@@ -10,7 +10,7 @@ Lecute project "OpenSource GIS"
 Lecturer: Marco Lechner
 
 Members of Smarg GIS Solution group:
-Fabian Weissert
+Fabian Weissert, 
 Alexander Tolle
 
 
